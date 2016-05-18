@@ -66,6 +66,7 @@ a:focus {
   font-family: avenir;
   text-transform: uppercase;
   font-weight: lighter;
+  color: white;
 }
 
 #hero {
@@ -164,19 +165,23 @@ a:focus {
 }
 #navbar_home     { width:  80px; }
 #navbar_about    { width:  80px; }
-#navbar_faq      { width:  80px; }
-#navbar_td       { width: 127px; }
-#navbar_event      { width: 80px; }
-#navbar_sponsor { width:  120px; }
+#navbar_faq      { width:  80px;
+				   padding-right: 100px; }
+#navbar_logo {
+  float: left;
+  display: block;
+  z-index: 1999999999!important;
+}
+
 
 .nav-logo {
   position: absolute;
   left: 0;
-  height: 30px;
+  height: 45px;
   width: auto;
   left: 2em;
   top: 0.7em;
-  z-index: 3
+  z-index: 3;
 }
 
 #header li {
@@ -377,7 +382,7 @@ a:focus {
 
 /* Header */
 .large-header {
-  background-image: url("http://www.hackingedu.co/img/hack_background.jpg");
+  background-image: url("../img/hack_background.png");
   height: 100vh;
   background-size: cover;
   background-position: center center;
@@ -403,6 +408,7 @@ a:focus {
 
 .substatement{
   color:white;
+  margin-top: 100px;
 }
 
 .press-kit-color{
@@ -1237,7 +1243,7 @@ Social Links
   color: white;
   display: inline-block;
   width: 50px;
-  margin-top: 3em;
+  margin-top: 7em;
   text-align: center;
 }
 
@@ -1509,7 +1515,7 @@ a.hover-line{
   width: 80px;
   height: 80px;
   margin: auto;
-  background: url("/img/downarrow.png");
+  background: url("../img/downarrow.png");
   background-size: contain;
 
   /* Browser Variations: */
